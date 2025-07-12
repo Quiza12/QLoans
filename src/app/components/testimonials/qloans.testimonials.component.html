@@ -1,0 +1,35 @@
+<div class="page-header" data-parallax="true" style="background-image: url('./assets/img/testimonials/background-testimonials.jpg');">
+    <div class="filter"></div>
+    <div class="container">
+        <div class="motto text-center">
+            <h1>Testimonials</h1>
+            <br />
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+                    <h3 class="title">See what just some of our previous satisfied clients have had to say about us</h3>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+
+                <div class="col-md-6 mr-auto ml-auto" *ngFor="let testimonial of testimomnials; let i = index">
+                    <div class="rounded testimonial" >
+                        <h4>{{testimonial.title}}</h4>
+                        <br/>
+                        <p><b>"{{testimonial.tagline}}"</b></p>
+                        <br/>
+                        <p>{{testimonial.review}}</p>
+                    </div>
+                </div>
+            
+            </div>
+            <br/>
+        </div>
+    </div>
+</div>
