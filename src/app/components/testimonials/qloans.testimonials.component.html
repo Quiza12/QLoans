@@ -20,9 +20,9 @@
 
                 <div class="col-md-6 mr-auto ml-auto" *ngFor="let testimonial of testimomnials; let i = index">
                     <div class="rounded testimonial" >
-                        <h4>{{testimonial.title}}</h4>
-                        <br/>
-                        <p><b>"{{testimonial.tagline}}"</b></p>
+                        <h4>{{testimonial.title | titlecase }}</h4>
+                        <!-- <br/>
+                        <p><b>"{{testimonial.tagline}}"</b></p> -->
                         <br/>
                         <p>{{testimonial.review}}</p>
                     </div>

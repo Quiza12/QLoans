@@ -1,4 +1,5 @@
-<div class="page-header" data-parallax="true" style="background-image: url('./assets/img/contact/background-contact.jpg');">
+<div class="page-header" data-parallax="true"
+    style="background-image: url('./assets/img/contact/background-contact.jpg');">
     <div class="filter"></div>
     <div class="container">
         <div class="motto text-center">
@@ -8,6 +9,7 @@
     </div>
 </div>
 <div class="main">
+
     <div class="section landing-section">
         <div class="container">
             <div class="row">
@@ -15,18 +17,20 @@
                     <h2 class="text-center">Contact</h2>
                     <h4 class="text-center description">Office: +02 9526 6014</h4>
                     <h4 class="text-center description">David: +61 404 045 681</h4>
-                    <h4 class="text-center description">Bradley: +61 403 310 052</h4>
-                    <h4 class="text-center description">Level 4, 29 Kiora Rd, Miranda NSW, 2228</h4>
+                    <!-- <h4 class="text-center description">Bradley: +61 403 310 052</h4> -->
+                    <!-- <h4 class="text-center description">Level 4, 29 Kiora Rd, Miranda NSW, 2228</h4> -->
 
-                    <form [formGroup]="contactForm" class="contact-form"  (ngSubmit)="onSubmit()">
+                    <form [formGroup]="contactForm" class="contact-form" (ngSubmit)="onSubmit()">
                         <div class="row">
                             <div class="col-md-12">
                                 <label>Name</label>
                                 <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
                                     <div class="input-group-prepend">
-                                      <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
+                                        <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
                                     </div>
-                                    <input type="text" style="border: 1px solid #DDDDDD;" class="form-control {{nameCss}}" placeholder="Name" id="name" name="name" formControlName="name" (focus)="focus=true" (blur)="focus=false" >
+                                    <input type="text" style="border: 1px solid #DDDDDD;"
+                                        class="form-control {{nameCss}}" placeholder="Name" id="name" name="name"
+                                        formControlName="name" (focus)="focus=true" (blur)="focus=false">
                                 </div>
                             </div>
                         </div>
@@ -35,29 +39,34 @@
                                 <label>Email</label>
                                 <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
                                     <div class="input-group-prepend">
-                                      <span class="input-group-text">  <i class="nc-icon nc-email-85"></i></span>
+                                        <span class="input-group-text"> <i class="nc-icon nc-email-85"></i></span>
                                     </div>
-                                    <input type="text" style="border: 1px solid #DDDDDD;" class="form-control {{emailCss}}" placeholder="Email" id="email" name="email" formControlName="email" (focus)="focus1=true" (blur)="focus1=false" >
+                                    <input type="text" style="border: 1px solid #DDDDDD;"
+                                        class="form-control {{emailCss}}" placeholder="Email" id="email" name="email"
+                                        formControlName="email" (focus)="focus1=true" (blur)="focus1=false">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label>Phone Number</label>
                                 <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">  <i class="nc-icon nc-mobile"></i></span>
-                                      </div>
-                                    <input type="text" style="border: 1px solid #DDDDDD;" class="form-control" placeholder="Phone Number" id="phone" name="phone" formControlName="phone" (focus)="focus1=true" (blur)="focus1=false" >
+                                        <span class="input-group-text"> <i class="nc-icon nc-mobile"></i></span>
+                                    </div>
+                                    <input type="text" style="border: 1px solid #DDDDDD;" class="form-control"
+                                        placeholder="Phone Number" id="phone" name="phone" formControlName="phone"
+                                        (focus)="focus1=true" (blur)="focus1=false">
                                 </div>
                             </div>
                         </div>
                         <label>Message</label>
-                        <textarea class="form-control" rows="4" placeholder="Tell us what you need..." id="message" name="message" formControlName="message" ></textarea>
+                        <textarea class="form-control" rows="4" placeholder="Tell us what you need..." id="message"
+                            name="message" formControlName="message"></textarea>
                         <div class="row">
                             <!-- <div class="col-md-4 mr-auto ml-auto">
                                 <button class="btn btn-info btn-round btn-lg">Send Message</button>
                             </div> -->
                             <div class="col-md-4 mr-auto ml-auto text-center">
-                                <button *ngIf="!loading" class="btn btn-info btn-round btn-lg">Send Message</button>                              
+                                <button *ngIf="!loading" class="btn btn-info btn-round btn-lg">Send Message</button>
                                 <button *ngIf="loading" class="btn btn-info btn-round btn-lg" disabled>
                                     <div class="spinner-border" role="status">
                                         <span class="sr-only">Loading...</span>
@@ -65,10 +74,27 @@
                                 </button>
                             </div>
                         </div>
-                        
+
                     </form>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="section section-gray text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mr-auto ml-auto">
+                    <h2 class="title">Office</h2>
+                </div>
+                <div class="col-md-8 mr-auto ml-auto">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.414640562831!2d151.09964757613125!3d-34.03323342759517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12c784ff1d199b%3A0x9d88e56dabdb5ad8!2sQLOANS!5e0!3m2!1sen!2sau!4v1752392355917!5m2!1sen!2sau"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <br /><br />
         </div>
     </div>
 
